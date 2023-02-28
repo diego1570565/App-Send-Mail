@@ -26,10 +26,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-https://github.com/diego1570565/APP-SEND-MAIL
+
 <body style="background-color: #a6a6a6">
 <div class="my-3">
-    <div class="container bg-light border p-3">
+    <div style="border-radius :30px;" class="container bg-light border p-3">
         <h3 class="text-center m-5 text-info">App Send Mail</h3>
         <form action="tratamento.php" method="post">
             <div class="m-5">
