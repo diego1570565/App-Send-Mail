@@ -3,8 +3,6 @@ session_start();
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\PHPMailer;
 
-
-
 $para = $_SESSION['para'];
 $assunto = $_SESSION['assunto'];
 $mensagem = $_SESSION['mensagem'];
@@ -37,11 +35,11 @@ function Enviar_email($para, $assunto, $mensagem)
         $mail->isHTML(true);
         $mail->Subject = $assunto;
         $mail->Body = $mensagem;
-        $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
         $mail->send();
-        echo 'Message has been sent';
-        header('location:index.php?email=enviado');
+        
     } catch (Exception $e) {
         header('location:index.php?email=nenviado');
     }
 }
+header('location:index.php?email=enviado');
