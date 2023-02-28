@@ -21,7 +21,7 @@
         $mail->Password = 'oammshsdagslfmmp';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
-        //Recipients
+
         $mail->setFrom($para, 'UNNIC');
         $mail->addAddress($para, 'UNNIC');
         $mail->isHTML(true);
